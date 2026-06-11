@@ -1,29 +1,97 @@
+<!--Don't look, I'm not a webdev-->
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Shivion's Random Stuff</title>
+    <title>Shivion's Portfolio</title>
 	<!--Boot Strap-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<!--Theme-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 	<!--My CSS-->
     <link rel="stylesheet" type="text/css" href="Assets/main.css">
 </head>
 <body>
-	<header>
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<a class="navbar-brand" id="Home" href="https://shivion.github.io">Shivion's Random Things</a>
-		</nav>
+	<header data-bs-theme="dark">
+	<nav class="navbar bg-body-tertiary">
+		<div class="container-fluid bs-body-bg">
+			<span class="navbar-brand mb-0 h1">Portfolio</span>
+		</div>
+	</nav>
 	</header>
-	<div class="body">
-		<div class="row">
-			<div class="col-md-4 col-md-offset-4">
-				<h1>Things</h1>
-				<ul>
-					<li><a href="MyraniumTableTopTimer">Table Top Timer</a></li>
-				</ul>
+	<div class="d-flex flex-column align-items-center">
+		<h1 class="display-5 mt-5">Professional Projects</h1>
+		<h1 class="display-6">Reclaim!</h1>
+		<a href="https://store.steampowered.com/app/4200480/Reclaim_Azhegiiwewining/"> Steam Link</a>
+		<p class="px-5"> A Unity point and click adventure game designed to help students learn Ojibwe trhough immersion. I'm super proud to have contributed to this project! I helped with the technical aspects of taking thier single scene vertical slice demo and making it a full fledged game. I contributed heavily to the Menu, Save and Load, Cross Scene Persistence, as well as helping with the QA phase and resolving all sorts of bugs in every aspect of gameplay.
+		</p>
+		<iframe width="1840" height="1035" src="https://www.youtube.com/embed/r2imDK9p5jI" title="Reclaim! Azhe-giiwewining - Official Launch Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		<h1 class="display-5 mt-5">Personal Projects</h1>
+		<h1 class="display-6">Codebreaker (Working Title)</h1>
+		<p class="px-5">A game I'm working on during my underemployment. The core concept is a horror game with survival elements where the player is locked in a bunker and forced to intercept radio signals to afford food. Over time the radio signals get creepier and more of the secrets of the bunker reveal themselves, but the player also customizes thier new home to make life a little easier. I'm making this game completely on my own with limited free assets like textures and sound effects and a starter setup for player movement (that I've already completely overhauled). I've got features such as
+		</p>
+		<ul>
+			<li>Player needs: Eating, drinking, sleeping</li>
+			<li>Basic interactions (grabbing and throwing most items, using certain items)</li>
+			<li>An interactive computer that gets passed input events when being looked at</li>
+			<li>A radio system where signals pop up that you have to tune to a frequency to hear (also radio stations that loop music)</li>
+			<li>A wiring system for connecting lights to switches and connecting more monitors to the PC</li>
+		</ul>
+		<div id="carouselExampleIndicators" class="carousel slide">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+			<video src="CodebreakerDemo1.webm" class="img-fluid" autoplay loop muted>
+			</div>
+			<div class="carousel-item">
+			<video src="CodebreakerDemo2.webm" class="img-fluid" autoplay loop muted>
+			</div>
+			<div class="carousel-item">
+			<video src="CodebreakerDemo3.webm" class="img-fluid" autoplay loop muted>
+			</div>
+			<div class="carousel-item">
+			<img src="CodebreakerScreenShot1.png" class="d-block w-100">
+			</div>
+			<div class="carousel-item">
+			<img src="CodebreakerScreenShot2.png" class="d-block w-100">
+			</div>
+			<div class="carousel-item">
+			<img src="CodebreakerScreenShot3.png" class="d-block w-100">
+			</div>
+			<div class="carousel-item">
+			<img src="CodebreakerScreenShot4.png" class="d-block w-100">
+			</div>
+			<div class="carousel-item">
+			<img src="CodebreakerScreenShot5.png" class="d-block w-100">
+			</div>
+			<div class="carousel-item">
+			<img src="CodebreakerScreenShot6.png" class="d-block w-100">
+			</div>
+			<div class="carousel-item">
+			<img src="CodebreakerScreenShot7.png" class="d-block w-100">
+			</div>
+			<div class="carousel-item">
+			<img src="CodebreakerScreenShot8.png" class="d-block w-100">
+			</div>
+			<div class="carousel-item">
+			<img src="CodebreakerScreenShot9.png" class="d-block w-100">
 			</div>
 		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+		</div>
+		<h1 class="display-6 mt-5">Terraria Mod - Magus Class</h1>
+		<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3035378530">Steam Link</a>
+		<a href="https://github.com/Shivion/Magus-Class">Github Link</a>
+		<p> I created modified versions of mage weapons that cast thier spells repeatedly at the cost of locking the player out of some mana</p>
+		<iframe width="625" height="311" src="https://www.youtube.com/embed/I1tpkz20w-U" title="Magus Clip 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		<h1 class="display-6 mt-5">Stardew Valley Mod - Filtered Chest Hopper</h1>
+		<a href="https://www.nexusmods.com/stardewvalley/mods/21730">Nexus Link</a>
+		<a href="https://github.com/Shivion/StardewValleyMods">Github Link</a>
+		<p>Updated and expanded a previous mod that automatically moved items from the inventory above to the inventory below (and added filtering based on the contents of the hopper), allowing for long chains of automation</p>
 	</div>
 </body>
 </html>
